@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="fc0c3c3a3d2082fc73813f6d773c24ad8a2cac29e830d17af3075c1a5aa93cde.html">Pagina Web Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="a8b4d59c6419610944af58b3cb6947eb9dfea37df7bf8fbf6b44e74f4d57dc85.html">Escenario </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-03-2022 15:10</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Pagina Web Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como usuario, quiero acceder a la web Utest<br />
+para realizar el registro en la pagina<br />
+y verificar que se carga en pantalla el texto Welcome to the world's largest community of freelance software testers!
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="82dd32e67457756a4b1b100b904a8186bc4c5d11c2f259e78dfeff4722f61ee9.html">Escenario
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="2df9a6180565e343646106a542f8d8c5880ca94ecfaade3785bfca738658c99a.html">HU
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Escenario
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que Jhonatan quiere registrarse en la pagina utest<br>Cuando el realiza el registro del mismo en la pagina web utest<br><table class='embedded'><thead><th>nombre</th><th>apellido</th><th>correo</th><th>idioma</th><th>ciudad</th><th>codigo_postal</th><th>pais</th><th>computador</th><th>version</th><th>idioma2</th><th>dispositivo_mobil</th><th>modelo</th><th>sistema_operativo</th><th>password</th><th>confirm_password</th></thead><tbody><tr><td>&lt;nombre&gt;</td><td>&lt;apellido&gt;</td><td>&lt;correo&gt;</td><td>&lt;idioma&gt;</td><td>&lt;ciudad&gt;</td><td>&lt;codigo_postal&gt;</td><td>&lt;pais&gt;</td><td>&lt;computador&gt;</td><td>&lt;version&gt;</td><td>&lt;idioma2&gt;</td><td>&lt;dispositivo_mobil&gt;</td><td>&lt;modelo&gt;</td><td>&lt;sistema_operativo&gt;</td><td>&lt;password&gt;</td><td>&lt;confirm_password&gt;</td></tr></tbody></table><br>Entonces verifica que se presente en pantalla el mensaje<br><table class='embedded'><tbody><tr><td>texto</td></tr><tr><td>&lt;texto&gt;</td></tr></tbody></table></div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Example: {nombre=Jhonatan, apellido=Paternina, correo=jhonatanpater122@gmail.com, idioma=Spanish, ciudad=Monter&iacute;a, codigo_postal=230003, pais=Colombia, computador=Linux, version=Fedora, idioma2=Spanish, dispositivo_mobil=Motorola, modelo=Moto G8 Power, sistema_operativo=Android 11, password=123654987Jp, confirm_password=123654987Jp, texto=Welcome to the world's largest community of freelance software testers!}" width="1366"/>
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Dado que Jhonatan quiere registrarse en la pagina utest" width="1366"/>
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Jhonatan abrir nevegador" width="1366"/>
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Jhonatan opens the Abrir pagina utest" width="1366"/>
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Jhonatan abrir nevegador (completed)" width="1366"/>
+                <img src="0296cbf18d32d69625cffcc565567b78b630741cb61ab1d38e1dd4e56be2e90b.png" title=" Dado que Jhonatan quiere registrarse en la pagina utest (completed)" width="1366"/>
+                <img src="00f69108d9452ccaecaade47290ca3f04ceb093884212970abe1bc5b2006ba4f.png" title=" Cuando el realiza el registro del mismo en la pagina web utest
+| nombre | apellido | correo | idioma | ciudad | codigo_postal | pais | computador | version | idioma2 | dispositivo_mobil | modelo | sistema_operativo | password | confirm_password |
+| Jhonatan | Paternina | jhonatanpater122@gmail.com | Spanish | Monter&iacute;a | 230003 | Colombia | Linux | Fedora | Spanish | Motorola | Moto G8 Power | Android 11 | 123654987Jp | 123654987Jp |" width="1366"/>
+                <img src="00f69108d9452ccaecaade47290ca3f04ceb093884212970abe1bc5b2006ba4f.png" title=" Jhonatan registro utest" width="1366"/>
+                <img src="00f69108d9452ccaecaade47290ca3f04ceb093884212970abe1bc5b2006ba4f.png" title=" Jhonatan clicks on Boton opcion registrase" width="1366"/>
+                <img src="f6045c4e1bb9d8c6efb97d8850a6835a888e1ddba9a6925f1a8582c0784b97ca.png" title=" Jhonatan enters 'Jhonatan' into Ingresar nombre" width="1366"/>
+                <img src="16b98d009456563db2fb7bf3538e2def6199116ee312be5702b1a2f4d688a3db.png" title=" Jhonatan enters 'Paternina' into Ingresar apellido" width="1366"/>
+                <img src="7485733e111bdd39c7bd0ed135b06181e5ee5e0c686d7c32670f2667444da9be.png" title=" Jhonatan enters 'jhonatanpater122@gmail.com' into Ingresar correo electronico" width="1366"/>
+                <img src="76d10591327563044783a3a8792e482f38fb25bee53002805f8aff0f1caef692.png" title=" Jhonatan clicks on Ingresar mes de la fecha de nacimiento" width="1366"/>
+                <img src="13025a5c8282f1e934dfb7b219c0c111b78428074556767a5b69125efecb2863.png" title=" Jhonatan clicks on Ingresar dia de la fecha de nacimiento" width="1366"/>
+                <img src="f144ac4a3e3497e3b7cffff9ff14e4772053ffbeca230cf05281e46b9d7aeda9.png" title=" Jhonatan clicks on Ingresar a&Atilde;&plusmn;o de la fecha de nacimiento" width="1366"/>
+                <img src="498fe84e7a1872f00be2863982cc0763a6fd409c7b34a0a02bdbe56767a78d8f.png" title=" Jhonatan enters 'Spanish' into Ingresar idiomas que habla" width="1366"/>
+                <img src="711101afc89ffff3b6da78fe2eb51763ee5eea13c58110aa17ac0e0dda66f44c.png" title=" Jhonatan clicks on Opcion siguiente" width="1366"/>
+                <img src="303ccee40ed302966cb0d53c7d845c442a149ec41a598273620d8021a50b10e6.png" title=" Jhonatan enters 'Monter&iacute;a' into Ingresar ciudad donde vive" width="1366"/>
+                <img src="49ff3f5582b4ba85d6b016794fe60f638211f2b8c82603dc54bc7b4bc65818b9.png" title=" Jhonatan enters '230003' into Ingresar codigo postal" width="1366"/>
+                <img src="ab912aac8d824364d6cf4453eaaefeef2485a821da6a26fc6442cc6d1b86d7dc.png" title=" Jhonatan clicks on Ingresar pais donde vive" width="1366"/>
+                <img src="8ae55828eee2b95adc68be7f300c894ab573e06acaef58aa910404dd7f6bf9d4.png" title=" Jhonatan enters 'Colombia' into Ingresar pais donde vive" width="1366"/>
+                <img src="ae4e4ea7db10d05525a0cb7079cf02df54f9a292d2d013f7dc44c753f1f33c24.png" title=" Jhonatan clicks on Opcion siguiente" width="1366"/>
+                <img src="8b312376f8ef091d0048c21e87ed74ac91ee0fc02d52c9df6830d0cba693e420.png" title=" Jhonatan clicks on Ingresar el sistema operativo del computador" width="1366"/>
+                <img src="2c53a104f6ebcb7b00eac5e2458c3ef6619d3e8c4dae7322289456598ce67b21.png" title=" Jhonatan clicks on Ingresar el sistema operativo del computador" width="1366"/>
+                <img src="2304a393a1fa9ae653e182b1a56ab33aab5d9a42cf3ad68755e84481c8b5fab3.png" title=" Jhonatan clicks on Ingresar la version del sistema operativo del computador" width="1366"/>
+                <img src="4ee4b66acd9e76cb4e10ad4626fc92a39fca81b4971a09026c7d00267065eec7.png" title=" Jhonatan clicks on Ingresar la version del sistema operativo del computador" width="1366"/>
+                <img src="d0088d860866f2296dee6652019f413fc94c047b3bae8d2351453c935eddcf2f.png" title=" Jhonatan clicks on Ingresar el idioma del sistema operativo" width="1366"/>
+                <img src="1fc5243c6442bd8cdafeb99177b0f8393fe3cff74b12fe5c07bbb820933eecf1.png" title=" Jhonatan clicks on Ingresar el idioma del sistema operativo" width="1366"/>
+                <img src="5b0e9a4976c5cbee8ba8c02d1cf130141374cc466e05a24ac80beefa80685b48.png" title=" Jhonatan clicks on Seleccionar el tipo de dispositivo movil" width="1366"/>
+                <img src="21e9191988cc972df8502d5fc7c1544bfb0f9cc6574f173cda667d7744d767c7.png" title=" Jhonatan clicks on Seleccionar el tipo de dispositivo movil" width="1366"/>
+                <img src="824dd108a1c16f57000b9007c8bb8856cb9de6971cb02bea41642cdc8f632886.png" title=" Jhonatan clicks on Seleccionar el modelo del movil" width="1366"/>
+                <img src="7c109d1a2cb7a1fa6a43b6fed6d490ba85fd2fd0cb1b9dfb6364e15009b7f4c9.png" title=" Jhonatan clicks on Seleccionar el modelo del movil" width="1366"/>
+                <img src="4b7139e4a15dba0949fdab125311a02ed3139ea05ed3d8f7fc3b7d5d6109c4bd.png" title=" Jhonatan clicks on Seleccionar el sistema operatico del movil" width="1366"/>
+                <img src="16cef783e3e49c7612c8a533cef3acfe03b6212555c26bebd63e36f8dec1d4cf.png" title=" Jhonatan clicks on Seleccionar el sistema operatico del movil" width="1366"/>
+                <img src="fe24bd16331a2c8a62088d118ffd2903ad45b99fc3784c71f6ad425f184f6330.png" title=" Jhonatan clicks on Opcion siguiente" width="1366"/>
+                <img src="ebb070b37d9ff7234ba4f7d6a1638435c500142e2b00ac1ea768c3b70fc60fe2.png" title=" Jhonatan enters '123654987Jp' into Ingresar la contrase&Atilde;&plusmn;a" width="1366"/>
+                <img src="f5b9605c19e4e20d748f6835bcefde52b6a4219344478daed2b84a6a9777a40f.png" title=" Jhonatan enters '123654987Jp' into Ingresar confirmacion de la contrase&Atilde;&plusmn;a" width="1366"/>
+                <img src="a70134fbe6f73412f051f5f8a73784b6515388dc2566d3f51aeae92d75af490d.png" title=" Jhonatan clicks on Seleccionar checkbox uno" width="1366"/>
+                <img src="75b0238f1edeba0d5fb5309ccad8b2fd7b23f8a7763253821910fbf6e3cb327e.png" title=" Jhonatan clicks on Seleccionar checkbox dos" width="1366"/>
+                <img src="0ff884588af1dbfdfa1594f7e7a455ab815766b2c63a4ba3018506d1ecbde400.png" title=" Jhonatan clicks on Seleccionar checkbox tres" width="1366"/>
+                <img src="4dd36393ddca24a4fa23accd598e22385816b3b8b789e9e264ae49603f1a31c2.png" title=" Jhonatan clicks on Seleccionar boton finalizar registro" width="1366"/>
+                <img src="4dd36393ddca24a4fa23accd598e22385816b3b8b789e9e264ae49603f1a31c2.png" title=" Jhonatan registro utest (completed)" width="1366"/>
+                <img src="5b7858aaa5265487035083dee5ad429bbb4dcee03125971054bd326ea7795990.png" title=" Cuando el realiza el registro del mismo en la pagina web utest
+| nombre | apellido | correo | idioma | ciudad | codigo_postal | pais | computador | version | idioma2 | dispositivo_mobil | modelo | sistema_operativo | password | confirm_password |
+| Jhonatan | Paternina | jhonatanpater122@gmail.com | Spanish | Monter&iacute;a | 230003 | Colombia | Linux | Fedora | Spanish | Motorola | Moto G8 Power | Android 11 | 123654987Jp | 123654987Jp | (completed)" width="1366"/>
+                <img src="359446f02525e35b1ed19024e4b363264dd9ef29632e2a346cfc332189eabc43.png" title=" Entonces verifica que se presente en pantalla el mensaje
+| texto |
+| Welcome to the world's largest community of freelance software testers! |" width="1366"/>
+                <img src="359446f02525e35b1ed19024e4b363264dd9ef29632e2a346cfc332189eabc43.png" title=" Then verificar" width="1366"/>
+                <img src="359446f02525e35b1ed19024e4b363264dd9ef29632e2a346cfc332189eabc43.png" title=" Entonces verifica que se presente en pantalla el mensaje
+| texto |
+| Welcome to the world's largest community of freelance software testers! | (completed)" width="1366"/>
+                <img src="359446f02525e35b1ed19024e4b363264dd9ef29632e2a346cfc332189eabc43.png" title=" Example: {nombre=Jhonatan, apellido=Paternina, correo=jhonatanpater122@gmail.com, idioma=Spanish, ciudad=Monter&iacute;a, codigo_postal=230003, pais=Colombia, computador=Linux, version=Fedora, idioma2=Spanish, dispositivo_mobil=Motorola, modelo=Moto G8 Power, sistema_operativo=Android 11, password=123654987Jp, confirm_password=123654987Jp, texto=Welcome to the world's largest community of freelance software testers!} (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
